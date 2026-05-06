@@ -91,7 +91,7 @@ a i {
 }
 
 .hero-text {
-    font-size: 4vw;
+    font-size: 7vw;
     font-family: "Caesar Dressing", cursive;
     font-style: italic;
     color: var(--hoover-color);
@@ -131,13 +131,14 @@ a i {
     padding: 3rem;
     font-size: 2rem;
     font-family: "Caesar Dressing", cursive;
-
+    color: var(--navbar-bg-color);
 }
 
 .find-us-container h2 {
     padding: 2rem;
     font-size: 2rem;
     font-family: "Caesar Dressing", cursive;
+    color: var(--navbar-bg-color);
 }
 
 .gallery-items {
@@ -223,6 +224,7 @@ p img {
     padding-bottom: 2rem;
     font-size: 2rem;
     font-family: "Caesar Dressing", cursive;
+    color: var(--navbar-bg-color);
 }
 
 .att-göra-container {
@@ -395,11 +397,11 @@ a:active {
     }
 
     .hero-container h1 {
-        font-size: 5vw;
+        font-size: 8vw;
     }
 
     .hero-container h2 {
-        font-size: 3vw;
+        font-size: 4vw;
         top: 15vw;
     }
 
