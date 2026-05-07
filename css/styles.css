@@ -71,6 +71,7 @@ main {
     font-family: "Caesar Dressing", cursive;
     font-style: bold;
     font-size: 1.5rem;
+    font-size: clamp(0.9rem, 3vw, 1.6rem);
     color: beige;
     text-shadow: var(--main-text-shadow);
     font-weight: 700;
@@ -88,6 +89,7 @@ main {
 }
 
 i {
+
     color: var(--image-color);
 }
 
@@ -134,7 +136,7 @@ a i {
 .våra-djur-container h2,
 .form-container h2 {
     padding: 3rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Caesar Dressing", cursive;
     color: var(--navbar-bg-color);
     text-shadow: var(--main-text-shadow);
@@ -142,7 +144,7 @@ a i {
 
 .find-us-container h2 {
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Caesar Dressing", cursive;
     color: var(--navbar-bg-color);
     text-shadow: var(--main-text-shadow);
@@ -236,27 +238,25 @@ tr:nth-child(even) {
 .ikoner {
     display: flex;
     flex-direction: column;
-
     text-align: left;
     margin-bottom: 1vw;
     padding-right: 1vw;
     padding-left: 1vw;
-
 }
 
 .ikon-beskrivning {
     display: flex;
     flex-direction: row;
     /* text-shadow: var(--main-text-shadow); */
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     padding-bottom: 1vw;
-
+    padding-top: 0.5vw;
 }
 
 .att-göra-container h2 {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Caesar Dressing", cursive;
     color: var(--navbar-bg-color);
     text-shadow: var(--main-text-shadow);
@@ -293,6 +293,7 @@ tr:nth-child(even) {
 }
 
 .att-göra-item1 img {
+    margin-top: 2rem;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
@@ -306,6 +307,14 @@ tr:nth-child(even) {
 
 .att-göra-ikoner {
     align-items: center;
+}
+
+h3 i {
+    color: var(--image-color);
+}
+
+hr a i:hover {
+    color: var(--hoover-color);
 }
 
 li p {
@@ -458,16 +467,19 @@ footer div p {
     color: var(--navbar-bg-color);
 }
 
-a:hover {
+a:hover,
+a i:hover {
     color: var(--hoover-color);
 }
 
-a:focus {
+a:focus,
+a i:focus {
     background: var(--focus-bg-color);
     border-radius: 50px;
 }
 
-a:active {
+a:active,
+a i:active {
     color: var(--hoover-color);
 }
 
