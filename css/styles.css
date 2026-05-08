@@ -2,6 +2,7 @@
 
 :root {
     --container-bg-color: rgb(237, 245, 218, 0.7);
+    --container-bg-color: rgb(248, 248, 239);
     --main-border: 3px solid rgb(136, 157, 108);
     --navbar-bg-color: rgb(37, 78, 35);
     --navbar-border: 3px solid rgb(9, 31, 9);
@@ -194,7 +195,7 @@ tr {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(161, 192, 120, 0.4);
+    background-color: rgba(223, 212, 190, 0.4);
 }
 
 .small-image {
@@ -263,8 +264,6 @@ tr:nth-child(even) {
 }
 
 .att-göra-container {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
@@ -323,6 +322,21 @@ li p {
 
 }
 
+.formulär-hitta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 4vw;
+    background-color: var(--container-bg-color);
+    border: var(--main-border);
+    margin-left: var(--container-margin);
+    margin-right: var(--container-margin);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--main-box-shadow);
+
+}
+
 .find-us-container {
     display: flex;
     flex-direction: column-reverse;
@@ -345,18 +359,20 @@ li {
 }
 
 .form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
-    background-color: var(--container-items-bg-color);
-    padding-right: 2vw;
-    padding-left: 2vw;
+    background-color: rgba(223, 212, 190, 0.4);
+    padding-right: 1vw;
+    padding-left: 1vw;
     border-radius: 20px;
     box-shadow: var(--smaller-box-shadow);
     padding-bottom: 2rem;
 }
 
 fieldset {
-    padding-right: 2vw;
-    padding-left: 2vw;
+    padding: 2rem;
     border-radius: 20px;
     border: var(--main-border);
 }
@@ -368,43 +384,73 @@ legend {
 .form-input {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1vw;
 }
 
 .form-input input {
     width: 10rem;
     text-align: center;
-    padding: 3px;
+    padding: clamp(1vw, 2vw, 10px);
+
     border-radius: 4px;
-    border: 1px double rgb(151, 151, 151);
+    border: 2px double rgb(164, 231, 137);
     background-color: rgb(255, 255, 255);
     margin-bottom: 3px;
 }
 
 .form-input label {
-    width: 6rem;
+    width: 10rem;
+    max-width: 50vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    font-size: clamp(1rem, 2vw, 3vw);
 }
 
 #accept-terms {
-    max-width: 1rem;
+    width: 17vw;
+    max-width: 40px;
     margin-top: 1rem;
 }
 
 #label-accept-terms {
-    width: 100%;
+    max-width: 50vw;
     text-align: left;
-    margin-left: 2rem;
-    margin-top: 1rem;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    padding: 2vw;
 }
 
 button {
     margin-top: 6px;
-    margin-left: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    border: 1px double rgb(151, 151, 151);
+    justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    border: 1px solid rgb(141, 233, 132);
+    box-shadow: var(--smaller-box-shadow);
+    background-color: rgb(141, 233, 132);
     border-radius: 4px;
+}
+
+button:hover {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-color: rgb(119, 173, 127);
+}
+
+button:focus {
+    background-color: rgba(59, 124, 39, 0.9);
+    border-color: rgb(119, 173, 127);
+    box-shadow: var(--focus-border);
+}
+
+button:active {
+    background-color: rgba(59, 124, 39, 0.9);
+    border-color: rgb(119, 173, 127);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
 }
 
 iframe {
@@ -415,20 +461,6 @@ iframe {
     border-radius: 20px;
 }
 
-.formulär-hitta-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-
-    margin-top: 4vw;
-    background-color: var(--container-bg-color);
-    border: var(--main-border);
-    margin-left: var(--container-margin);
-    margin-right: var(--container-margin);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: var(--main-box-shadow);
-}
 
 footer {
     display: flex;
@@ -465,7 +497,7 @@ a i:active {
 }
 
 /* --------------------------------------media starts ------------------------------------- */
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     body {
         background-size: 850px;
     }
@@ -550,6 +582,10 @@ a i:active {
 
     .form-input label {
         width: 6rem;
+    }
+
+    fieldset {
+        padding: 2vw;
     }
 
     #accept-terms {
