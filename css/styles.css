@@ -207,12 +207,9 @@ tr {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(212, 242, 187, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-tr:nth-child(odd) {
-    background-color: rgba(144, 240, 93, 0.3);
-}
 
 .small-image {
     width: 50px;
