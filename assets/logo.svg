@@ -1,0 +1,68 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="195" fill="#8db867" stroke="#5a7d3e" stroke-width="2"/>
+  
+  <!-- Decorative leaves -->
+  <g id="leaves">
+    <ellipse cx="80" cy="100" rx="25" ry="40" fill="#5a7d3e" opacity="0.6" transform="rotate(-35 80 100)"/>
+    <ellipse cx="320" cy="100" rx="25" ry="40" fill="#5a7d3e" opacity="0.6" transform="rotate(35 320 100)"/>
+    <ellipse cx="70" cy="280" rx="20" ry="35" fill="#5a7d3e" opacity="0.5" transform="rotate(45 70 280)"/>
+    <ellipse cx="330" cy="280" rx="20" ry="35" fill="#5a7d3e" opacity="0.5" transform="rotate(-45 330 280)"/>
+  </g>
+  
+  <!-- Reptile head (Lizard/Dragon hybrid) -->
+  <g id="reptile-head">
+    <!-- Head shape -->
+    <ellipse cx="200" cy="160" rx="70" ry="65" fill="#6b8e54"/>
+    <ellipse cx="200" cy="160" rx="68" ry="63" fill="#7aa860" stroke="#5a7d3e" stroke-width="2"/>
+    
+    <!-- Snout -->
+    <ellipse cx="250" cy="165" rx="35" ry="40" fill="#7aa860"/>
+    <path d="M 280 160 Q 295 160 300 165 Q 295 170 280 170" fill="#5a7d3e" opacity="0.4"/>
+    
+    <!-- Jaw/Teeth -->
+    <path d="M 260 180 L 270 185 L 275 180 L 283 185 L 288 180" stroke="#5a7d3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Eye rim/socket -->
+    <circle cx="185" cy="135" r="28" fill="#5a7d3e" opacity="0.3"/>
+    <circle cx="185" cy="135" r="26" fill="#4a5e2e"/>
+    
+    <!-- Eye outer (slit eye) -->
+    <ellipse cx="185" cy="135" rx="22" ry="20" fill="#7aa860"/>
+    
+    <!-- Eye iris - reptile slit -->
+    <ellipse cx="185" cy="137" rx="14" ry="10" fill="#e8d7a0"/>
+    
+    <!-- Eye pupil - vertical slit -->
+    <ellipse cx="185" cy="137" rx="4" ry="8" fill="#1a1a1a"/>
+    <ellipse cx="183" cy="135" rx="1.5" ry="3" fill="#ffffff" opacity="0.7"/>
+    
+    <!-- Scales pattern on head -->
+    <circle cx="170" cy="140" r="3" fill="#5a7d3e" opacity="0.5"/>
+    <circle cx="180" cy="125" r="2.5" fill="#5a7d3e" opacity="0.4"/>
+    <circle cx="200" cy="120" r="2.5" fill="#5a7d3e" opacity="0.4"/>
+    <circle cx="215" cy="125" r="3" fill="#5a7d3e" opacity="0.5"/>
+    <circle cx="225" cy="140" r="2.5" fill="#5a7d3e" opacity="0.4"/>
+    <circle cx="230" cy="155" r="2.5" fill="#5a7d3e" opacity="0.4"/>
+    <circle cx="175" cy="155" r="2" fill="#5a7d3e" opacity="0.3"/>
+    
+    <!-- Crown/spine ridges -->
+    <path d="M 175 110 Q 185 95 200 92 Q 215 95 225 110" fill="none" stroke="#5a7d3e" stroke-width="3" opacity="0.6"/>
+    <polygon points="175,110 180,100 185,110" fill="#5a7d3e" opacity="0.5"/>
+    <polygon points="195,88 200,78 205,88" fill="#5a7d3e" opacity="0.6"/>
+    <polygon points="215,110 220,100 225,110" fill="#5a7d3e" opacity="0.5"/>
+  </g>
+  
+  <!-- Text: SYSTEMENTOR ZOO -->
+  <g id="text-main">
+    <text x="200" y="260" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#2d3d1a" letter-spacing="2">
+      SYSTEMENTOR
+    </text>
+    <text x="200" y="295" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#e8d7a0" letter-spacing="1">
+      ZOO
+    </text>
+  </g>
+  
+  <!-- Bottom accent circle -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#5a7d3e" stroke-width="4" stroke-dasharray="8,4" opacity="0.4"/>
+</svg>
