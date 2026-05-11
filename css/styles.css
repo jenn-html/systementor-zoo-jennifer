@@ -100,6 +100,12 @@ a i {
     color: beige;
 }
 
+a img {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
 .hero-text {
     font-size: 7vw;
     font-family: "Caesar Dressing", cursive;
@@ -120,6 +126,16 @@ a i {
     position: relative;
     top: 10vw;
     z-index: 1;
+}
+
+.systementor-zoo-logo {
+    width: 10vw;
+    position: sticky;
+    left: 4vw;
+    top: 8vw;
+    z-index: 2;
+    border-radius: 20px;
+    float: left;
 }
 
 .gallery-container,
@@ -506,10 +522,14 @@ iframe {
 
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 3vw;
     margin: 2vw;
     color: var(--container-bg-color);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 footer div {
@@ -520,6 +540,19 @@ footer div p {
     margin-top: 5px;
     margin-bottom: 5px;
     color: var(--navbar-bg-color);
+}
+
+footer div h2,
+footer div h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: beige;
+}
+
+footer img {
+    width: 300px;
+    height: auto;
+    border-radius: 2vw;
 }
 
 a:hover,
@@ -582,7 +615,15 @@ a i:active {
         font-size: 1rem;
     }
 
-
+    .systementor-zoo-logo {
+        width: 10vw;
+        position: sticky;
+        left: 2vw;
+        top: 10vw;
+        z-index: 2;
+        border-radius: 10px;
+        float: left;
+    }
 
     .formulär-hitta-container {
         display: grid;
@@ -655,6 +696,11 @@ a i:active {
         display: block;
         padding: 1vw;
         font-size: xx-large;
+    }
+
+    a img {
+        width: 40px;
+        height: 40px;
     }
 
     .nav-text .text {
