@@ -40,6 +40,12 @@ body {
     border: var(--scalable-border);
 }
 
+.logo {
+    background-image: url('./assets/logo.svg');
+    width: 200px;
+    height: 200px;
+}
+
 header {
     margin: 0;
     padding: 0;
