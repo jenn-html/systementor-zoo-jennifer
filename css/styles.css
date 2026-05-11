@@ -247,7 +247,7 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: row;
     /* text-shadow: var(--main-text-shadow); */
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding-bottom: 1vw;
     padding-top: 0.5vw;
 }
@@ -537,6 +537,10 @@ a i:active {
     .hero-container h2 {
         font-size: 4vw;
         top: 15vw;
+    }
+
+    .ikon-beskrivning {
+        font-size: 1.3rem;
     }
 
     .gallery-container h2,
