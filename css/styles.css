@@ -125,6 +125,7 @@ a i {
 
     margin-top: 4vw;
     background-color: var(--container-bg-color);
+    background-image: ;
     border: var(--main-border);
     margin-left: var(--container-margin);
     margin-right: var(--container-margin);
@@ -170,12 +171,17 @@ a i {
 }
 
 table {
-
+    color: black;
     border-radius: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(196, 245, 169, 0.4);
     box-shadow: var(--smaller-box-shadow);
     align-items: center;
+}
+
+table a {
+    color: rgb(6, 67, 137);
+    text-decoration: none;
 }
 
 th,
@@ -187,13 +193,25 @@ td {
     justify-items: center;
 }
 
+table a:visited {
+    color: rgb(89, 49, 138);
+}
+
+table a:hover {
+    color: var(--hoover-color);
+}
+
 tr {
-    border: 1px solid #d7e4c8;
+    border: 1px solid #c6f393;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: rgba(223, 212, 190, 0.4);
+    background-color: rgba(212, 242, 187, 0.4);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(144, 240, 93, 0.3);
 }
 
 .small-image {
@@ -362,9 +380,11 @@ li {
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: left;
-    background-color: rgba(223, 212, 190, 0.4);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(92, 231, 92, 0.2), rgba(255, 255, 255, 0.8)), url(../images/bakgrund3.png);
+    background-color: rgb(161, 160, 160);
+    background-blend-mode: overlay;
     padding-right: 2vw;
     padding-left: 2vw;
     border-radius: 20px;
@@ -392,7 +412,7 @@ legend {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1vw;
 }
 
@@ -408,12 +428,11 @@ legend {
 .form-input input {
     width: 10rem;
     text-align: center;
-    padding: 1rem;
-
+    padding: 2px;
     border-radius: 4px;
     border: 2px double rgb(164, 231, 137);
     background-color: rgb(255, 255, 255);
-    margin-bottom: 3px;
+    margin-bottom: 20px;
 }
 
 .form-input label {
@@ -422,11 +441,12 @@ legend {
     padding-right: 2vw;
     padding-left: 2vw;
     font-size: 1.5rem;
+    padding: 2vw;
 }
 
 #accept-terms {
     width: 17vw;
-    max-width: 40px;
+    max-width: 35px;
     margin-top: 1rem;
 }
 
@@ -505,17 +525,20 @@ footer div p {
 
 a:hover,
 a i:hover {
+
     color: var(--hoover-color);
 }
 
 a:focus,
 a i:focus {
+
     background: var(--focus-bg-color);
     border-radius: 50px;
 }
 
 a:active,
 a i:active {
+
     color: var(--hoover-color);
 }
 
@@ -575,6 +598,11 @@ a i:active {
         border-radius: 20px;
         box-shadow: var(--main-box-shadow);
 
+    }
+
+    #accept-terms {
+        height: 20px;
+        margin-top: 1rem;
     }
 }
 
@@ -647,10 +675,10 @@ a i:active {
         color: var(--hoover-color);
     }
 
-    .form-input {
+    /* .form-input {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .form-input input {
         width: 9rem;
@@ -668,11 +696,6 @@ a i:active {
 
     fieldset {
         padding: 2vw;
-    }
-
-    #accept-terms {
-        max-width: 1rem;
-        margin-top: 1rem;
     }
 
     #label-accept-terms {
@@ -696,4 +719,15 @@ a i:active {
         padding: 3px;
     }
 
+}
+
+@media (max-width: 500px) {
+    body {
+        background-size: 500px;
+    }
+
+    .form-input {
+        display: flex;
+        flex-direction: column;
+    }
 }
