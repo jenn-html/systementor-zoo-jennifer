@@ -64,9 +64,9 @@ main {
 
 .hero-img {
     justify-items: center;
-    width: 100vw;
+    width: 100%;
     position: relative;
-    bottom: 0;
+    top: 0;
     mask-image: linear-gradient(to top, transparent, black, transparent);
 }
 
@@ -789,6 +789,12 @@ a i:active {
     tr {
         font-size: 0.8rem;
         padding: 3px;
+    }
+
+    iframe {
+        min-width: 300px;
+        width: 100%;
+        min-height: 400px;
     }
 
 }
