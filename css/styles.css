@@ -64,9 +64,9 @@ main {
 
 .hero-img {
     justify-items: center;
-    width: 100%;
+    width: 100vw;
     position: relative;
-    top: 0;
+    bottom: 0;
     mask-image: linear-gradient(to top, transparent, black, transparent);
 }
 
@@ -107,24 +107,23 @@ a img {
 }
 
 .hero-text {
-    font-size: 7vw;
+    font-size: 8vw;
     font-family: "Caesar Dressing", cursive;
     font-style: italic;
-    color: var(--hoover-color);
     text-shadow: var(--stronger-text-shadow);
-    margin-left: 4vw;
-    position: relative;
-    top: 10vw;
+    position: sticky;
+    top: 8vw;
     z-index: 1;
+    color: rgb(233, 240, 143);
 }
 
 .hero-container h2 {
-    color: var(--hoover-color);
+    color: rgb(46, 97, 36);
     text-shadow: var(--stronger-text-shadow);
-    font-size: 2vw;
+    font-size: 3vw;
     font-style: italic;
-    position: relative;
-    top: 10vw;
+    position: sticky;
+    top: 18vw;
     z-index: 1;
 }
 
@@ -143,7 +142,7 @@ a img {
 
     margin-top: 4vw;
     background-color: var(--container-bg-color);
-    background-image: ;
+
     border: var(--main-border);
     margin-left: var(--container-margin);
     margin-right: var(--container-margin);
@@ -581,7 +580,7 @@ a i:active {
 
     .hero-text {
 
-        top: 15vw;
+        top: 10vw;
 
     }
 
@@ -590,8 +589,8 @@ a i:active {
     }
 
     .hero-container h2 {
-        font-size: 4vw;
-        top: 15vw;
+        font-size: 3vw;
+        top: 20vw;
     }
 
     .ikon-beskrivning {
@@ -647,6 +646,7 @@ a i:active {
 }
 
 /* --------------------------------------media starts ------------------------------------- */
+
 @media (max-width: 850px) {
     body {
         background-size: 850px;
@@ -654,7 +654,7 @@ a i:active {
 
     .hero-text {
 
-        top: 15vw;
+        top: 14vw;
 
     }
 
@@ -664,7 +664,7 @@ a i:active {
 
     .hero-container h2 {
         font-size: 4vw;
-        top: 15vw;
+        top: 24vw;
     }
 
     .gallery-container,
