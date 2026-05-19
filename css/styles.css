@@ -517,7 +517,7 @@ iframe {
     object-fit: cover;
     border-radius: 20px;
     min-height: 600px;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 
@@ -587,6 +587,11 @@ a i:active {
         padding: 1vw;
         font-size: 1.2rem;
     }
+
+    iframe {
+        min-height: 600px;
+        min-width: 350px;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -595,8 +600,8 @@ a i:active {
     }
 
     .formulär-hitta-container {
-        margin-left: var(--media-container-margin);
-        margin-right: var(--media-container-margin);
+        margin-left: var(--container-margin);
+        margin-right: var(--container-margin);
     }
 }
 
@@ -670,6 +675,33 @@ a i:active {
         height: 20px;
         margin-top: 1rem;
     }
+
+    iframe {
+        min-width: 400px;
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .nav-text .image {
+        display: block;
+        padding: 1vw;
+        font-size: xx-large;
+    }
+
+    a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-text .text {
+        display: none;
+    }
+
+    .nav-text {
+        font-size: 1rem;
+        text-align: center;
+        width: 5rem;
+    }
 }
 
 /* --------------------------------------media starts ------------------------------------- */
@@ -711,27 +743,6 @@ a i:active {
 
     .animal img {
         height: auto;
-    }
-
-    .nav-text {
-        font-size: 1rem;
-        text-align: center;
-        width: 5rem;
-    }
-
-    .nav-text .image {
-        display: block;
-        padding: 1vw;
-        font-size: xx-large;
-    }
-
-    a img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .nav-text .text {
-        display: none;
     }
 
     a:hover {
@@ -792,7 +803,7 @@ a i:active {
     }
 
     iframe {
-        min-width: 300px;
+        min-width: 200px;
         width: 100%;
         min-height: 400px;
     }
