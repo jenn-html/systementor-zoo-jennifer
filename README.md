@@ -49,13 +49,6 @@ cd systementor-zoo-jennifer
 
 Browse through the zoo website to explore the different sections and learn how the HTML structure creates a functional web page.
 
-## 🤝 Contributing
-
-Feel free to fork this project and submit pull requests for any improvements!
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ## 👤 Author
 
@@ -66,5 +59,3 @@ Created by [jenn-html](https://github.com/jenn-html)
 For issues or questions, please open an [issue](https://github.com/jenn-html/systementor-zoo-jennifer/issues)
 
 ---
-
-**Last Updated:** May 19, 2026
