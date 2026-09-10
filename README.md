@@ -50,12 +50,3 @@ cd systementor-zoo-jennifer
 Browse through the zoo website to explore the different sections and learn how the HTML structure creates a functional web page.
 
 
-## 👤 Author
-
-Created by [jenn-html](https://github.com/jenn-html)
-
-## 📞 Support
-
-For issues or questions, please open an [issue](https://github.com/jenn-html/systementor-zoo-jennifer/issues)
-
----
