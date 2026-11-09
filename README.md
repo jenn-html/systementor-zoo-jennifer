@@ -48,5 +48,5 @@ cd systementor-zoo-jennifer
 ## 📖 Usage
 
 Browse through the zoo website to explore the different sections and learn how the HTML structure creates a functional web page.
-
+https://jenn-html.github.io/systementor-zoo-jennifer/
 
